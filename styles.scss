@@ -1,14 +1,19 @@
-#root {
-    max-width: 1200;
+body,html {
     margin: 0;
+    max-width: 100%;
+    max-height: 100%;
 }
-#text {
-    width: 250px;
-    height: 250px;
+#background {
+    position: absolute;
 }
 
-#img {
-    width: 250px;
-    height: 250px;
+#root {
+    position: relative;
+    text-align: center;
+}
+.headline-title {
+    position: absolute;
+    top: 8px;
+    left: 16px;
 }
 
