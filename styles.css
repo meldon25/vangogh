@@ -1,6 +1,7 @@
 body, html {
     width: auto;
     height: auto;
+    margin: 0;
 }
 #background {
     /* position: absolute; */
@@ -25,6 +26,12 @@ body, html {
     transform-origin: top left;
 }
 
+.one {
+    position: relative;
+    color: white;
+
+}
+
 .two {
     background-color: red;
 }
@@ -40,7 +47,7 @@ body, html {
 
 .outer-wrapper {
     width: 400vw;
-    height: 200vh;
+    height: 100vh;
     transform: rotate(-90deg), translateY(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
@@ -51,6 +58,13 @@ body, html {
 }
 ::-webkit-scrollbar {
     display: none;
+}
+
+.headline {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    text-align: right;
 }
 
 
