@@ -1,0 +1,57 @@
+body, html {
+    width: auto;
+    height: auto;
+}
+#background {
+    /* position: absolute; */
+}
+
+.headline-title {
+    /* position: absolute; */
+    top: 8px;
+    left: 16px;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 400vw;
+    transform: rotate(90deg), translateY(-100vh);
+    transform-origin: top left;
+}
+
+.two {
+    background-color: red;
+}
+.three {
+    background-color: blue;
+}
+.four {
+    background-color: purple;
+}
+.five {
+    background-color: grey;
+}
+
+.outer-wrapper {
+    width: 400vw;
+    height: 200vh;
+    transform: rotate(-90deg), translateY(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+

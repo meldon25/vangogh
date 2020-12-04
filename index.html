@@ -4,20 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Take A Trip With Vincent Van Gogh</title>
-    <link rel="stylesheet" href="styles.scss">
-    <script type="text/javascript" src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="api.js" defer></script>
+    <script type="text/javascript" src="interactive_map.js" defer></script>
 </head>
 
 <body>
-    <div id='root'>
-    <div class="headline-title">
-    <h1 class="header-title">Take A Trip With Vincent Van Gogh</h1>
-    <h3 class="header-subtitle">Join me on Vincent's journey in this immersive timeline experience!</h3>
-</div>
+    <div class="outer-wrapper">
+        <div class="wrapper">
+            <div class="slide one">
+                    <div class="headline-title">
+                        <h1 class="header-title">Take A Trip With Vincent Van Gogh</h1>
+                        <h3 class="header-subtitle">Join me on Vincent's journey in this immersive timeline experience!</h3>
+                </div>
+                <img 
+                id="background" 
+                src="https://i.imgur.com/Yousgle.jpg" 
+                max-width="100%" 
+                min-height="100%" />
+            </div>
+            <div class="slide two">
+                <h1>Hello world i'm slide two</h1>
+            </div>
+            <div class="slide three">
+                <h1>Hello world i'm slide three</h1>
+            </div>
+            <div class="slide four">
+                <h1>Hello world i'm slide four</h1>
+            </div>
+            <div class="slide five">
+                <h1>Hello world i'm slide five</h1>
+            </div>
+        </div>
+    </div>
     
-    <div id="card"></div>
-    <!-- <div id='pictures'></div> -->
-</div>
+<!-- USE THIS FOR CARDS -->
+    <!-- <div id="card"></div> -->
     
 </body>
 </html>
