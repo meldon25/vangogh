@@ -3,9 +3,7 @@ body, html {
     height: auto;
     margin: 0;
 }
-#background {
-    /* position: absolute; */
-}
+
 
 .headline-title {
     /* position: absolute; */
@@ -29,20 +27,20 @@ body, html {
 .one {
     position: relative;
     color: white;
-
 }
 
 .two {
-    background-color: red;
+    position: relative;
+    opacity: 50%;
 }
 .three {
-    background-color: blue;
+    opacity: 50%;
 }
 .four {
-    background-color: purple;
+    opacity: 50%;
 }
 .five {
-    background-color: grey;
+    opacity: 50%;
 }
 
 .outer-wrapper {
@@ -66,6 +64,121 @@ body, html {
     right: 16px;
     text-align: right;
 }
+.text-nuenen {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.text-paris {
+    position: absolute;
+    top: 8px;
+}
+.text-arles {
+    position: absolute;
+    top: 8px;
+}
+nav {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.nav-list {
+    list-style-type: none;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+}
+
+#nuenen_slide {
+    scroll-behavior: smooth;
+}
+#paris_slide {
+    scroll-behavior: smooth;
+}
+#arles_slide {
+    scroll-behavior: smooth;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 2px white, 0 0 3px white, 
+      0 0 4px lightyellow, 0 0 5px 0px rgb(236, 178, 69), 
+      0 0 5px 0px orange, 0 0 8px 0px orange, 
+      0 0 12px 0px yellow, 0 0 20px 0px yellow, 
+      0 0 30px 0px lightyellow, 0 0 40px 0px lightyellow, 
+      0 0 50px 0px white, 0 0 60px 0px white, 
+      0 0 80px white, 0 0 100px white;
+    }
+    to {
+      box-shadow: 0 0 2px white, 0 0 3px white, 
+      0 0 4px lightyellow, 0 0 5px 3px rgb(236, 178, 69), 
+      0 0 5px 3px orange, 0 0 8px 3px orange, 
+      0 0 12px 3px yellow, 0 0 20px 3px yellow, 
+      0 0 30px 3px lightyellow, 0 0 40px 3px lightyellow, 
+      0 0 50px 3px white, 0 0 60px 3px white, 
+      0 0 80px white, 0 0 100px white;
+    }
+  }
+  .nuenen-star {
+    position: absolute;
+    bottom: 40%;
+    left: 53%;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .paris-star {
+    position: absolute;
+    bottom: 80%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 100%;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  .arles-star {
+        position: absolute;
+        top: 60%;
+        left: 80%;
+        width: 5px;
+        height: 5px;
+        background: white;
+        border-radius: 100%;
+        animation-name: glow;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+  }
+
+  .stremyoise-star {
+    position: absolute;
+    top: 20%;
+    left: 90%;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 100%;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+
+  
+
 
 
 
