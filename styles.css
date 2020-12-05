@@ -2,11 +2,12 @@ body, html {
     width: auto;
     height: auto;
     margin: 0;
+    display: flex;
 }
 
 
 .headline-title {
-    /* position: absolute; */
+    position: absolute;
     top: 8px;
     left: 16px;
 }
@@ -19,7 +20,7 @@ body, html {
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 500vw;
     transform: rotate(90deg), translateY(-100vh);
     transform-origin: top left;
 }
@@ -30,23 +31,27 @@ body, html {
 }
 
 .two {
+    opacity: 60%;
     position: relative;
-    opacity: 50%;
+    color: white;
 }
 .three {
-    opacity: 50%;
+    opacity: 60%;
+    position: relative;
 }
 .four {
-    opacity: 50%;
+    opacity: 60%;
+    position: relative;
 }
 .five {
-    opacity: 50%;
+    opacity: 60%;
+    position: relative;
 }
 
 .outer-wrapper {
-    width: 400vw;
-    height: 100vh;
-    transform: rotate(-90deg), translateY(-100vh);
+    width: 500vw;
+    height: auto;
+    transform: rotate(-90deg), translateX(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -61,9 +66,17 @@ body, html {
 .headline {
     position: absolute;
     top: 8px;
-    right: 16px;
+    right: 7%;
     text-align: right;
 }
+.instruct-use {
+    position: absolute;
+    color: white;
+    bottom: 10%;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
 .text-nuenen {
     position: absolute;
     top: 8px;
@@ -77,6 +90,13 @@ body, html {
     position: absolute;
     top: 8px;
 }
+.text-stremyoise {
+    position: absolute;
+    top: 8px;
+}
+
+/* NAVIGATION */
+
 nav {
     position: absolute;
     top: 8px;
@@ -89,6 +109,8 @@ nav {
     color: white;
     text-decoration: none;
     position: absolute;
+    padding-top: 10px;
+    font-size: 17px;
 }
 
 #nuenen_slide {
@@ -100,6 +122,12 @@ nav {
 #arles_slide {
     scroll-behavior: smooth;
 }
+#background-slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* STAR ANIMATION */
 
 @keyframes glow {
     from {
@@ -123,10 +151,10 @@ nav {
   }
   .nuenen-star {
     position: absolute;
-    bottom: 40%;
-    left: 53%;
-    width: 5px;
-    height: 5px;
+    top: 4%;
+    left: 11%;
+    width: 8px;
+    height: 8px;
     background: white;
     border-radius: 100%;
     animation-name: glow;
@@ -136,10 +164,10 @@ nav {
   }
   .paris-star {
     position: absolute;
-    bottom: 80%;
-    left: 50%;
-    width: 5px;
-    height: 5px;
+    top: 18%;
+    left: 24%;
+    width: 8px;
+    height: 8px;
     background: white;
     border-radius: 100%;
     animation-name: glow;
@@ -150,10 +178,10 @@ nav {
   
   .arles-star {
         position: absolute;
-        top: 60%;
-        left: 80%;
-        width: 5px;
-        height: 5px;
+        top: 9%;
+        right: 38%;
+        width: 9px;
+        height: 9px;
         background: white;
         border-radius: 100%;
         animation-name: glow;
@@ -164,8 +192,8 @@ nav {
 
   .stremyoise-star {
     position: absolute;
-    top: 20%;
-    left: 90%;
+    top: 23%;
+    right: 29%;
     width: 7px;
     height: 7px;
     background: white;
@@ -175,6 +203,7 @@ nav {
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
+
   
 
   
