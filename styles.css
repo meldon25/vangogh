@@ -1,13 +1,13 @@
 body, html {
     width: auto;
     height: auto;
-}
-#background {
-    /* position: absolute; */
+    margin: 0;
+    display: flex;
 }
 
+
 .headline-title {
-    /* position: absolute; */
+    position: absolute;
     top: 8px;
     left: 16px;
 }
@@ -20,28 +20,38 @@ body, html {
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 400vw;
+    width: 500vw;
     transform: rotate(90deg), translateY(-100vh);
     transform-origin: top left;
 }
 
+.one {
+    position: relative;
+    color: white;
+}
+
 .two {
-    background-color: red;
+    opacity: 60%;
+    position: relative;
+    color: white;
 }
 .three {
-    background-color: blue;
+    opacity: 60%;
+    position: relative;
 }
 .four {
-    background-color: purple;
+    opacity: 60%;
+    position: relative;
 }
 .five {
-    background-color: grey;
+    opacity: 60%;
+    position: relative;
 }
 
 .outer-wrapper {
-    width: 400vw;
-    height: 200vh;
-    transform: rotate(-90deg), translateY(-100vh);
+    width: 500vw;
+    height: auto;
+    transform: rotate(-90deg), translateX(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -52,6 +62,152 @@ body, html {
 ::-webkit-scrollbar {
     display: none;
 }
+
+.headline {
+    position: absolute;
+    top: 8px;
+    right: 7%;
+    text-align: right;
+}
+.instruct-use {
+    position: absolute;
+    color: white;
+    bottom: 10%;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.text-nuenen {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.text-paris {
+    position: absolute;
+    top: 8px;
+}
+.text-arles {
+    position: absolute;
+    top: 8px;
+}
+.text-stremyoise {
+    position: absolute;
+    top: 8px;
+}
+
+/* NAVIGATION */
+
+nav {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.nav-list {
+    list-style-type: none;
+}
+.nav-item {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+#nuenen_slide {
+    scroll-behavior: smooth;
+}
+#paris_slide {
+    scroll-behavior: smooth;
+}
+#arles_slide {
+    scroll-behavior: smooth;
+}
+#background-slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* STAR ANIMATION */
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 2px white, 0 0 3px white, 
+      0 0 4px lightyellow, 0 0 5px 0px rgb(236, 178, 69), 
+      0 0 5px 0px orange, 0 0 8px 0px orange, 
+      0 0 12px 0px yellow, 0 0 20px 0px yellow, 
+      0 0 30px 0px lightyellow, 0 0 40px 0px lightyellow, 
+      0 0 50px 0px white, 0 0 60px 0px white, 
+      0 0 80px white, 0 0 100px white;
+    }
+    to {
+      box-shadow: 0 0 2px white, 0 0 3px white, 
+      0 0 4px lightyellow, 0 0 5px 3px rgb(236, 178, 69), 
+      0 0 5px 3px orange, 0 0 8px 3px orange, 
+      0 0 12px 3px yellow, 0 0 20px 3px yellow, 
+      0 0 30px 3px lightyellow, 0 0 40px 3px lightyellow, 
+      0 0 50px 3px white, 0 0 60px 3px white, 
+      0 0 80px white, 0 0 100px white;
+    }
+  }
+  .nuenen-star {
+    position: absolute;
+    top: 4%;
+    left: 11%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 100%;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .paris-star {
+    position: absolute;
+    top: 18%;
+    left: 24%;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 100%;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  .arles-star {
+        position: absolute;
+        top: 9%;
+        right: 38%;
+        width: 9px;
+        height: 9px;
+        background: white;
+        border-radius: 100%;
+        animation-name: glow;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+  }
+
+  .stremyoise-star {
+    position: absolute;
+    top: 23%;
+    right: 29%;
+    width: 7px;
+    height: 7px;
+    background: white;
+    border-radius: 100%;
+    animation-name: glow;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+  
+
+  
+
 
 
 
