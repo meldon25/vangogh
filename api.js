@@ -66,7 +66,9 @@ Promise.all([
 	for(let i = 0; i < paris_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${paris_data[i].image}`;
+		img.classList.add('sliders')
 		const div = document.createElement('div');
+		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + paris_data[i].title +
 		'Name: ' + paris_data[i].title +
@@ -83,7 +85,9 @@ Promise.all([
 	for(let i = 0; i < arles_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${arles_data[i].image}`;
+		img.classList.add('sliders')
 		const div = document.createElement('div');
+		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + arles_data[i].title +
 		'Name: ' + arles_data[i].title +
@@ -101,7 +105,9 @@ Promise.all([
 	for(let i = 0; i < stremy_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${stremy_data[i].image}`;
+		img.classList.add('sliders')
 		const div = document.createElement('div');
+		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + stremy_data[i].title +
 		'Name: ' + stremy_data[i].title +
