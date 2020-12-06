@@ -50,7 +50,7 @@ body, html {
 
 .outer-wrapper {
     width: 500vw;
-    height: auto;
+    height: 100vh;
     transform: rotate(-90deg), translateX(-100vh);
     transform-origin: top left;
     overflow-y: scroll;
@@ -99,8 +99,9 @@ body, html {
 
 nav {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 0;
+    left: 0;
+    bottom: 0;
 }
 .nav-list {
     list-style-type: none;
@@ -203,6 +204,11 @@ nav {
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
+/* 
+  .card {
+      width: 150px;
+      height: 150px;
+  } */
 
   
 
