@@ -47,10 +47,12 @@ Promise.all([
 	for(let i = 0; i < nuenen_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${nuenen_data[i].image}`;
+		img.classList.add('sliders')
 		const div = document.createElement('div');
+		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + nuenen_data[i].title +
-		'Name: ' + nuenen_data[i].title +
+		'Name: ' + nuenen_data[i].name +
 		'Date: ' + nuenen_data[i].date +
 		'Description: ' + nuenen_data[i].description;
 		nuenen_card.appendChild(img);
@@ -64,7 +66,9 @@ Promise.all([
 	for(let i = 0; i < paris_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${paris_data[i].image}`;
+		img.classList.add('sliders')
 		const div = document.createElement('div');
+		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + paris_data[i].title +
 		'Name: ' + paris_data[i].title +
@@ -81,7 +85,9 @@ Promise.all([
 	for(let i = 0; i < arles_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${arles_data[i].image}`;
+		img.classList.add('sliders')
 		const div = document.createElement('div');
+		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + arles_data[i].title +
 		'Name: ' + arles_data[i].title +
@@ -99,7 +105,9 @@ Promise.all([
 	for(let i = 0; i < stremy_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${stremy_data[i].image}`;
+		img.classList.add('sliders')
 		const div = document.createElement('div');
+		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + stremy_data[i].title +
 		'Name: ' + stremy_data[i].title +
@@ -110,21 +118,28 @@ Promise.all([
 	}
 	console.log("hello i'm st remy", stremy_card);
 }).catch(function (error) {
-	// if there's an error, log it
 	console.log(error);
 });
 
-// function appendData(data) {
-// 	const mainContainer = document.getElementById('card');
-// 	for(let i = 0; i < data.length; i++) {
-// 		const img = document.createElement('img');
-// 		img.src = `${data[i].image}`;
-// 		const div = document.createElement('div');
-// 		div.innerHTML =  
-// 		'Title: ' + data[i].title + 
-// 		'Name: ' + data[i].name + 
-// 		'Date: ' + data[i].date + 
-// 		'Description: ' + data[i].description;
-// 		mainContainer.appendChild(img)
-// 		mainContainer.appendChild(div);
+
+// let slideIndex = 1;
+// showSlides(slideIndex);
+
+// function addSlides(n) {
+// 	showSlides(slideIndex += n);
+// }
+
+// function currrentSlide(n) {
+// 	showSlides(slideIndex = n);
+// }
+
+// function showSlides(n) {
+// 	let i;
+// 	let slides = document.getElementsByClassName('showSlide');
+// 	if (n > slides.length) {slideIndex = 1}
+// 	if (n < 1) {slideIndex = slides.length}
+// 	for (let i = 0; i < slides.length; i++) {
+// 		slides[i].style.display = "none";
 // 	}
+// 	slides[slideIndex - 1].style.display = "block";
+// }
