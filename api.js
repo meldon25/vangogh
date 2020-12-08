@@ -130,25 +130,16 @@ Promise.all([
 	console.log(error);
 });
 
+const buttons = document.getElementsByTagName("button");
 
-// let slideIndex = 1;
-// showSlides(slideIndex);
-
-// function addSlides(n) {
-// 	showSlides(slideIndex += n);
-// }
-
-// function currrentSlide(n) {
-// 	showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-// 	let i;
-// 	let slides = document.getElementsByClassName('showSlide');
-// 	if (n > slides.length) {slideIndex = 1}
-// 	if (n < 1) {slideIndex = slides.length}
-// 	for (let i = 0; i < slides.length; i++) {
-// 		slides[i].style.display = "none";
-// 	}
-// 	slides[slideIndex - 1].style.display = "block";
-// }
+for (const button of buttons) {
+  button.addEventListener('click', () => {
+     var id = button.getAttribute("id");
+    
+     var layerClass = "." + id+ "-layer";
+     var layers = document.querySelectorAll(layerClass);
+     for (const layer of layers) {
+       layer.classList.toggle("active");
+     }
+  });
+}
