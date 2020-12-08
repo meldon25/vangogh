@@ -71,11 +71,20 @@ Promise.all([
 		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + paris_data[i].title +
-		'Name: ' + paris_data[i].title +
+		'Name: ' + paris_data[i].name +
 		'Date: ' + paris_data[i].date +
 		'Description: ' + paris_data[i].description;
+		const prev = document.createElement('a');
+		prev.classList.add('prev');
+		const next = document.createElement('a');
+		next.classList.add('next');
+		const dots = document.createElement('div');
+		dots.classList.add('dots-container');
 		paris_card.appendChild(img);
 		paris_card.appendChild(div);
+		paris_card.appendChild(prev);
+		paris_card.appendChild(next);
+		paris_card.appendChild(dots);
 	}
 	console.log("hello i'm paris", paris_card);
 
@@ -90,7 +99,7 @@ Promise.all([
 		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + arles_data[i].title +
-		'Name: ' + arles_data[i].title +
+		'Name: ' + arles_data[i].name +
 		'Date: ' + arles_data[i].date +
 		'Description: ' + arles_data[i].description;
 		arles_card.appendChild(img);
@@ -110,7 +119,7 @@ Promise.all([
 		div.classList.add('sliders')
 		div.innerHTML =
 		'Title: ' + stremy_data[i].title +
-		'Name: ' + stremy_data[i].title +
+		'Name: ' + stremy_data[i].name +
 		'Date: ' + stremy_data[i].date +
 		'Description: ' + stremy_data[i].description;
 		stremy_card.appendChild(img);
