@@ -2,6 +2,7 @@ body, html {
     width: auto;
     height: auto;
     margin: 0;
+    font-family: 'Quicksand', sans-serif;
     /* display: flex; */
 }
 
@@ -64,9 +65,9 @@ body, html {
 
 .headline {
     position: absolute;
-    top: 8px;
-    right: 7%;
-    text-align: right;
+    bottom: 15%;
+    margin-left: 20px;
+    text-align: left;
 }
 .instruct-use {
     position: absolute;
@@ -141,7 +142,10 @@ body, html {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 10%;
+    top: 30%;
+    right: 20%;
+    width: 40vw;
+    height: 40vh;
 }
 #stremy_card img {
     width: 350px;
@@ -173,12 +177,19 @@ nav {
 
 #nuenen_slide {
     scroll-behavior: smooth;
+    margin: 0;
 }
 #paris_slide {
     scroll-behavior: smooth;
+    margin: 0;
 }
 #arles_slide {
     scroll-behavior: smooth;
+    margin: 0;
+}
+#stremyoise_slide {
+    scroll-behavior: smooth;
+    margin: 0;
 }
 #background-slide {
     width: 100vw;
@@ -276,13 +287,12 @@ nav {
     height: 100%;
   }
 
-  .dots-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px;
-      position: absolute;
-  }
+
+
+
+
+
+
 
 
   
