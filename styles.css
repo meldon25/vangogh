@@ -72,10 +72,12 @@ body, html {
     display: flex;
     flex-direction: column;
     position: absolute;
-     top: 20%;
+     top: 15%;
      right: 10%;
-     width: 600px;
-     height: 500px;
+     width: auto;
+     max-width: 700px;
+     height: auto;
+     max-height: 700px;
 }
 
 #nuenen_card > img {
@@ -209,8 +211,14 @@ nav {
 .bio-paragraph-cont {
     display: flex;
     flex-direction: column;
+    font-weight: 500;
+    font-size: 18px;
     width: 40vw;
     height: 20vh;
+}
+
+.alt-slides {
+    filter: blur(0.2em);
 }
 
 /* STAR ANIMATION */
