@@ -72,17 +72,26 @@ body, html {
     display: flex;
     flex-direction: column;
     position: absolute;
-     top: 20%;
-     right: 10%;
-     width: 600px;
-     height: 500px;
+     top: 17%;
+     right: 12%;
+     width: auto;
+     max-width: 600px;
+     height: auto;
+     max-height: 700px;
 }
 
 #nuenen_card > img {
     width: auto;
     max-width: 500px;
     height: auto;
+    max-height: 600px;
     display: flex; 
+}
+#nuenen_card > div {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 320px;
 }
 
 .text-nuenen {
@@ -95,20 +104,27 @@ body, html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 600px;
-    height: 400px;
+    top: 17%;
+    right: 12%;
+    width: auto;
+    max-width: 500px;
+    height: auto;
+    max-height: 600px;
 }
 #paris_card > img {
     width: auto;
+    max-width: 450px;
     height: auto;
-    max-width: 500px;
+    max-height: 550px;
     display: flex;
 }
 #paris_card > div {
-    margin-left: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 320px;
 }
+
 .text-paris {
     position: absolute;
     top: 3%;
@@ -119,16 +135,25 @@ body, html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 600px;
-    height: 500px;
+    top: 17%;
+    right: 12%;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 700px;
 }
 #arles_card > img {
     width: auto;
-    max-width: 500px;
+    max-width: 450px;
     height: auto;
+    max-height: 550px;
     display: flex;
+}
+#arles_card > div {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 320px;
 }
 
 .text-arles {
@@ -141,16 +166,25 @@ body, html {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 20%;
-    right: 10%;
-    width: 600px;
-    height: 500px;
+    top: 17%;
+    right: 12%;
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    max-height: 700px;
 }
 #stremy_card img {
     width: auto;
     max-width: 500px;
     height: auto;
+    max-height: 600px;
     display: flex;
+}
+#stremy_card > div {
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 320px;
 }
 .text-stremyoise {
     position: absolute;
@@ -174,7 +208,10 @@ nav {
     position: absolute;
     top: 6%;
     text-decoration: none;
-    right: 10%;
+    right: 12%;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
 }
 .nav-item {
     color: white;
@@ -187,18 +224,22 @@ nav {
 
 #nuenen_slide {
     scroll-behavior: smooth;
+    overscroll-behavior: contain;
     margin: 0;
 }
 #paris_slide {
     scroll-behavior: smooth;
+    overscroll-behavior: contain;
     margin: 0;
 }
 #arles_slide {
     scroll-behavior: smooth;
+    overscroll-behavior: contain;
     margin: 0;
 }
 #stremyoise_slide {
     scroll-behavior: smooth;
+    overscroll-behavior: contain;
     margin: 0;
 }
 #background-slide {
@@ -209,9 +250,18 @@ nav {
 .bio-paragraph-cont {
     display: flex;
     flex-direction: column;
+    font-weight: 500;
+    font-size: 18px;
     width: 40vw;
     height: 20vh;
 }
+
+.alt-slides {
+    filter: blur(2px);
+    /* opacity: 80%; */
+    margin: 0;
+}
+
 
 /* STAR ANIMATION */
 
@@ -292,43 +342,36 @@ nav {
 
   .slider {
     width: 400px;
-    height: 400px;
+    height: auto;
     overflow-x: scroll;
     overflow-y: auto;
   }
 
   .sliders {
     width: auto;
-    height: 100%;
+    height: auto;
+    max-height: 700px;
     flex-shrink: 0;
     display: flex;
   }
-  .nuenen-bk {
-      rotate: -180;
-  }
 
-  /* button.prev, button.next {
-    display: flex; 
-    font-size: 32px;
-    align-items: center; 
-    justify-content: center;
-    color: #FFF; 
-    background-color: #333;
-    border-radius: 50%;
-    width: 44px; 
-    height: 44px;
-  }
-  button.prev {
-    position: absolute; 
-    left: 0; 
-    top: 80px;
-  }
-  button.next {
-    position: absolute; 
-    right: 0; 
-    top: 80px;
-  } */
 
+  
+
+
+  
+
+  
+
+  
+ 
+ 
+  
+
+  
+
+  
+  
   
 
 

@@ -42,34 +42,20 @@ Promise.all([
 	console.log("show me", data);
 
 	const nuenen_card = document.getElementById('nuenen_card');
-	// nuenen_card.classList.add('ul');
 	const nuenen_data = data[0];
 	console.log(data[0])
 	for(let i = 0; i < nuenen_data.length; i++) {
 		const img = document.createElement('img');
 		img.src = `${nuenen_data[i].image}`;
 		img.classList.add('sliders');
-		// img.classList.add('li');
 		const div = document.createElement('div');
 		div.classList.add('sliders');
-		// div.classList.add('li');
 		div.innerHTML =
 		'Title: ' + nuenen_data[i].title + '<br />' +
 		'Name: ' + nuenen_data[i].name + '<br />' +
-		'Date: ' + nuenen_data[i].date + '<br />' +
-		'Description: ' + nuenen_data[i].description;
-		// const prev = document.createElement('button');
-		// prev.classList.add('prev');
-		// prev.innerHTML = '&lt;'
-		// prev.click="show(-1)";
-		// const next = document.createElement('button');
-		// next.classList.add('next');
-		// next.innerHTML = '&gt;'
-		// next.click="show(+1)";
+		'Date: ' + nuenen_data[i].date + '<br />'
 		nuenen_card.appendChild(img);
 		nuenen_card.appendChild(div);
-		// nuenen_card.appendChild(prev)
-		// nuenen_card.appendChild(next);
 	}
 	console.log("hello i'm nuenen", nuenen_card);
 
@@ -86,8 +72,7 @@ Promise.all([
 		div.innerHTML =
 		'Title: ' + paris_data[i].title + '<br />' +
 		'Name: ' + paris_data[i].name + '<br />' +
-		'Date: ' + paris_data[i].date + '<br />' +
-		'Description: ' + paris_data[i].description;
+		'Date: ' + paris_data[i].date + '<br />'
 		paris_card.appendChild(img);
 		paris_card.appendChild(div);
 	}
@@ -105,8 +90,7 @@ Promise.all([
 		div.innerHTML =
 		'Title: ' + arles_data[i].title + '<br />' +
 		'Name: ' + arles_data[i].name + '<br />' +
-		'Date: ' + arles_data[i].date + '<br />' +
-		'Description: ' + arles_data[i].description;
+		'Date: ' + arles_data[i].date + '<br />'
 		arles_card.appendChild(img);
 		arles_card.appendChild(div);
 	}
@@ -125,8 +109,7 @@ Promise.all([
 		div.innerHTML =
 		'Title: ' + stremy_data[i].title + '<br />' +
 		'Name: ' + stremy_data[i].name + '<br />' +
-		'Date: ' + stremy_data[i].date + '<br />' +
-		'Description: ' + stremy_data[i].description;
+		'Date: ' + stremy_data[i].date + '<br />'
 		stremy_card.appendChild(img);
 		stremy_card.appendChild(div);
 	}
@@ -135,11 +118,3 @@ Promise.all([
 	console.log(error);
 });
 
-
-// let liEls = document.getElementsByClassName('ul li');
-// let index = 0;
-// window.show = function(increase) {
-//   index = index + increase;
-//   index = Math.min(Math.max(index,0), liEls.length-1);
-//   liEls[index].scrollIntoView({behavior: 'smooth'});
-// }
