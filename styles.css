@@ -3,7 +3,6 @@ body, html {
     height: 100vh;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
-    /* display: flex; */
 }
 
 
@@ -258,8 +257,59 @@ nav {
 
 .alt-slides {
     filter: blur(2px);
-    /* opacity: 80%; */
     margin: 0;
+}
+
+.carousel-dir-nue {
+    display: flex;
+   position: absolute;
+   top: 11%;
+   right: 13.5%;
+}
+.carousel-dir-par {
+    display: flex;
+   position: absolute;
+   top: 11%;
+   right: 11.6%;
+}
+.carousel-dir-arl {
+    display: flex;
+   position: absolute;
+   top: 11%;
+   right: 11.7%;
+}
+.carousel-dir-rem {
+    display: flex;
+   position: absolute;
+   top: 11%;
+   right: 13.5%;
+}
+.box:hover {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+.bounce-7 {
+    animation-name: bounce-7;
+    animation-timing-function: cubic-bezier(0.280, 0.840, 0.420, 1);
+}
+@keyframes bounce-7 {
+    0%   { transform: scale(1,1) translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-30px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1) translateY(-7px); }
+    64%  { transform: scale(1,1) translateY(0); }
+    100% { transform: scale(1,1) translateY(0); }
+}
+
+.arrow {
+    width: 10px;
+    height: 10px;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 
