@@ -3,8 +3,8 @@ body, html {
     height: 100vh;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    color: white;
 }
-
 
 .headline-title {
     position: absolute;
@@ -16,7 +16,6 @@ body, html {
     position: relative;
     width: 100vw;
     height: 100vh;
-    color: white;
 }
 .outer-wrapper {
     width: 500vw;
@@ -41,6 +40,26 @@ body, html {
     transform: rotate(90deg), translateY(-100vh);
     transform-origin: top left;
 }
+
+.slider {
+    width: 400px;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: auto;
+  }
+
+  .sliders {
+    width: auto;
+    height: auto;
+    max-height: 700px;
+    flex-shrink: 0;
+    display: flex;
+  }
+  .alt-slides {
+    margin: 0;
+    filter: blur(0.9px);
+}
+
 .one {
 }
 .two {
@@ -66,6 +85,7 @@ body, html {
     font-weight: 500;
 }
 
+/* NUENEN CARD */
 
 #nuenen_card {
     display: flex;
@@ -79,14 +99,14 @@ body, html {
      max-height: 700px;
 }
 
-#nuenen_card > img {
+#nuenen_card img {
     width: auto;
     max-width: 450px;
     height: auto;
     max-height: 520px;
     display: flex; 
 }
-#nuenen_card > div {
+#nuenen_card div {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
@@ -99,6 +119,8 @@ body, html {
     left: 5%;
 }
 
+/* PARIS CARD */
+
 #paris_card {
     display: flex;
     flex-direction: column;
@@ -110,14 +132,14 @@ body, html {
     height: auto;
     max-height: 600px;
 }
-#paris_card > img {
+#paris_card img {
     width: auto;
     max-width: 440px;
     height: auto;
     max-height: 520px;
     display: flex;
 }
-#paris_card > div {
+#paris_card div {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
@@ -130,6 +152,8 @@ body, html {
     left: 5%;
 }
 
+/* ARLES CARD */
+
 #arles_card {
     display: flex;
     flex-direction: column;
@@ -141,14 +165,14 @@ body, html {
     height: auto;
     max-height: 700px;
 }
-#arles_card > img {
+#arles_card img {
     width: auto;
     max-width: 440px;
     height: auto;
     max-height: 520px;
     display: flex;
 }
-#arles_card > div {
+#arles_card div {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
@@ -160,6 +184,8 @@ body, html {
     top: 3%;
     left: 5%;
 }
+
+/* STREMY CARD */
 
 #stremy_card {
     display: flex;
@@ -179,7 +205,7 @@ body, html {
     max-height: 520px;
     display: flex;
 }
-#stremy_card > div {
+#stremy_card div {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
@@ -255,10 +281,7 @@ nav {
     height: 20vh;
 }
 
-.alt-slides {
-    margin: 0;
-    filter: blur(0.9px);
-}
+/* CAROUSEL DIRECTIONS */
 
 .carousel-dir-nue {
     display: flex;
@@ -284,6 +307,8 @@ nav {
    top: 11%;
    right: 11.4%;
 }
+
+/* SCROLL DIRECTION ANIMATION */
 .box:hover {
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -389,22 +414,6 @@ nav {
     animation-iteration-count: infinite;
     animation-direction: alternate;
   }
-
-  .slider {
-    width: 400px;
-    height: auto;
-    overflow-x: scroll;
-    overflow-y: auto;
-  }
-
-  .sliders {
-    width: auto;
-    height: auto;
-    max-height: 700px;
-    flex-shrink: 0;
-    display: flex;
-  }
-
 
   
 
