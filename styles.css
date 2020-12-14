@@ -256,8 +256,8 @@ nav {
 }
 
 .alt-slides {
-    filter: blur(2px);
     margin: 0;
+    filter: blur(0.9px);
 }
 
 .carousel-dir-nue {
