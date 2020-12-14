@@ -81,9 +81,9 @@ body, html {
 
 #nuenen_card > img {
     width: auto;
-    max-width: 500px;
+    max-width: 450px;
     height: auto;
-    max-height: 600px;
+    max-height: 520px;
     display: flex; 
 }
 #nuenen_card > div {
@@ -112,9 +112,9 @@ body, html {
 }
 #paris_card > img {
     width: auto;
-    max-width: 450px;
+    max-width: 440px;
     height: auto;
-    max-height: 550px;
+    max-height: 520px;
     display: flex;
 }
 #paris_card > div {
@@ -143,9 +143,9 @@ body, html {
 }
 #arles_card > img {
     width: auto;
-    max-width: 450px;
+    max-width: 440px;
     height: auto;
-    max-height: 550px;
+    max-height: 520px;
     display: flex;
 }
 #arles_card > div {
@@ -174,9 +174,9 @@ body, html {
 }
 #stremy_card img {
     width: auto;
-    max-width: 500px;
+    max-width: 440px;
     height: auto;
-    max-height: 600px;
+    max-height: 520px;
     display: flex;
 }
 #stremy_card > div {
@@ -264,25 +264,25 @@ nav {
     display: flex;
    position: absolute;
    top: 11%;
-   right: 13.5%;
+   right: 11.7%;
 }
 .carousel-dir-par {
     display: flex;
    position: absolute;
    top: 11%;
-   right: 11.6%;
+   right: 11.3%;
 }
 .carousel-dir-arl {
     display: flex;
    position: absolute;
    top: 11%;
-   right: 11.7%;
+   right: 11.3%;
 }
 .carousel-dir-rem {
     display: flex;
    position: absolute;
    top: 11%;
-   right: 13.5%;
+   right: 11.4%;
 }
 .box:hover {
     animation-duration: 2s;
