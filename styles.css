@@ -57,7 +57,7 @@ body, html {
   }
   .alt-slides {
     margin: 0;
-    filter: blur(0.9px);
+    filter: blur(0.9px) brightness(80%);
 }
 
 .one {
@@ -110,7 +110,7 @@ body, html {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
-    margin-bottom: 320px;
+    margin-bottom: 230px;
 }
 
 .text-nuenen {
@@ -143,7 +143,7 @@ body, html {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
-    margin-bottom: 320px;
+    margin-bottom: 230px;
 }
 
 .text-paris {
@@ -176,7 +176,7 @@ body, html {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
-    margin-bottom: 320px;
+    margin-bottom: 260px;
 }
 
 .text-arles {
@@ -209,7 +209,7 @@ body, html {
     font-weight: 500;
     font-size: 18px;
     margin-top: 5px;
-    margin-bottom: 320px;
+    margin-bottom: 280px;
 }
 .text-stremyoise {
     position: absolute;
