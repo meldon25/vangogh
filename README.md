@@ -1,5 +1,5 @@
 # Vincent Van Gogh Timeline
-![image](https://i.imgur.com/EW2tw73.jpg)
+![image](https://i.imgur.com/bsfI27d.jpg)
 #### Created with HTML, CSS, and JavaScript
 #### Check out the live version here: [Van Gogh Timeline](van-gogh.surge.sh)
 ##### Take a trip through Vincent Van Gogh's life by clicking on one of the stars in his "Starry Night" painting.
